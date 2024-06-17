@@ -76,8 +76,8 @@ const CountUpComponent = () => {
           <p className="countup-description">Open Access Capacity</p>
         </div>
         <div className="countup-card">
-          <div className="countup-number">~90.2% CAGR</div>
-          <p className="countup-description">Growth Since Inception</p>
+          <div className="countup-number">40+</div>
+          <p className="countup-description">Team Size</p>
         </div>
       </div>
     </div>

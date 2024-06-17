@@ -33,9 +33,11 @@ function Navbar() {
         <div className={`nav-elements ${isNavOpen ? 'active' : ''}`}>
           <ul>
             <li><a href="#home" className="active">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Partners</a></li>
+            <li><a href="#projects">Calculator</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
