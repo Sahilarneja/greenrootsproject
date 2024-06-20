@@ -52,8 +52,8 @@
 
 .circular-image {
   border-radius: 50%;
-  max-height: 200px;
-  width: 200px;
+  max-height: 150px; /* Reduced maximum height */
+  width: 150px; /* Ensure it maintains the circular shape */
 }
 
 .aboutus_box_content h1 {
@@ -122,4 +122,3 @@
     max-height: 200px; /* Further reduce maximum height for small screens */
   }
 }
-
