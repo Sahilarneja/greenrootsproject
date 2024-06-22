@@ -1,0 +1,67 @@
+.hero-section {
+  height: 80vh; /* Adjust height as needed */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url('../assets/hero.avif'); /* Update path to your image */
+  background-position: center;
+  background-size: cover;
+  color: white; /* Text color within the hero section */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: flex-end; /* Align content to the bottom */
+  margin: 0; /* Remove any unintended margin */
+  padding: 20px; /* Add some padding for spacing */
+  position: relative; /* Allows for layering elements on top (optional) */
+  z-index: 0; /* Adjust stacking order if needed (optional) */
+}
+
+.hero-text {
+  text-align: right; /* Align hero text to the right */
+}
+
+.hero-text h1 {
+  font-size: 4em; /* Adjust heading size as desired */
+  margin-bottom: 20px; /* Adjust spacing after heading */
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.hero-button {
+  display: inline-block;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 20px;
+  background-color: #019863;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #017a53;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh; /* Adjust height for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .hero-text h1 {
+    font-size: 2.5em; /* Adjust heading size for smaller screens */
+  }
+
+  .hero-button {
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9em;
+    padding: 0 15px;
+  }
+}
