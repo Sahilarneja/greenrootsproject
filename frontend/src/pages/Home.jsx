@@ -5,6 +5,7 @@ import CountUpComponent from '../components/CountUp';
 import About from '../components/About';
 import ProjectCarousel from '../components/ProjectCarousel';
 
+
 function Home() {
   return (
     <div className="home">
@@ -13,6 +14,7 @@ function Home() {
       <CountUpComponent/>
       <About/>
       <ProjectCarousel/>
+    
     </div>
   );
 }

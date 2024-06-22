@@ -25,6 +25,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     border: 1px solid #e6e6e6;
+   
   }
   
   .project-card:hover {
