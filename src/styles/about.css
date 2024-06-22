@@ -3,123 +3,215 @@
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align horizontally */
-  min-height: 100vh; /* Ensure full viewport height */
+  align-items: center;
 }
 
-.aboutus_box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+.aboutus_container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-bottom: 40px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutus_section {
+  margin-bottom: 30px;
+}
+
+.aboutus_title {
+  font-size: 2.5em;
+  color: #278b1e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.aboutus_content {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #292929;
+  max-width: 1100px; /* Adjusted max-width */
+  margin: 0 auto; /* Center align horizontally */
+  margin-bottom: 70px;
+}
+
+.aboutus_content p {
+  font-weight: bold; /* Bold font weight for paragraphs */
+}
+
+
+.section_title {
+  font-size: 2em;
+  color: #278b1e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.founder_box {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.founder_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.aboutus_box_content {
+.founder_image {
+  flex: 1;
+  padding: 20px;
   text-align: center;
-  padding: 20px;
-  flex: 1;
 }
 
-.aboutus_box_image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  flex: 1;
-}
-
-.aboutus_box_image img {
+.founder_image img {
   max-width: 100%;
   height: auto;
-  max-height: 300px; /* Adjusted maximum height */
-  border-radius: 8px;
-}
-
-.circular-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  flex: 1;
-}
-
-.circular-image {
+  max-height: 250px;
   border-radius: 50%;
-  max-height: 200px;
-  width: 200px;
 }
 
-.aboutus_box_content h1 {
+.founder_content {
+  flex: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.founder_content h3 {
   font-size: 2em;
   color: #278b1e;
   margin-bottom: 10px;
 }
 
-.aboutus_box_content h3 {
+.founder_content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #242323;
+  font-weight: bold;
+}
+
+.awards_grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.award_card {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.award_card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 8px;
+}
+
+.award_title {
   font-size: 1.5em;
-  color: #444;
+  color: #278b1e;
   margin-bottom: 10px;
 }
 
-.aboutus_box_content p {
+.award_card p {
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.6;
   color: #666;
   margin-bottom: 10px;
 }
 
+.company-images-grid {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Adjusted gap between images */
+}
+
+.company-image {
+  width: 200px; /* Adjusted image width */
+  height: 200px; /* Adjusted image height */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.company-image img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
 @media (max-width: 768px) {
-  .aboutus_box {
-    flex-direction: column;
+  .aboutus_title {
+    font-size: 2em;
   }
 
-  .aboutus_box_content h1 {
+  .section_title {
     font-size: 1.8em;
   }
 
-  .aboutus_box_content h3 {
+  .founder_image img {
+    max-height: 200px;
+  }
+
+  .award_card {
+    width: 250px;
+  }
+
+  .award_title {
     font-size: 1.3em;
   }
 
-  .aboutus_box_content p {
+  .award_card p {
     font-size: 0.9em;
+  }
+
+  .company-image {
+    width: 150px; /* Adjusted image width for smaller screens */
+    height: 150px; /* Adjusted image height for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .aboutus_box {
-    margin: 0 10px;
+  .aboutus_title {
+    font-size: 1.8em;
   }
 
-  .aboutus_box_content {
-    padding: 10px;
-  }
-
-  .aboutus_box_content h1 {
+  .section_title {
     font-size: 1.6em;
   }
 
-  .aboutus_box_content h3 {
-    font-size: 1.2em;
+  .founder_section {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .aboutus_box_content p {
-    font-size: 0.8em;
+  .award_grid {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
-  .aboutus_box_image {
-    padding: 10px;
+  .award_card {
+    width: 100%;
   }
 
-  .aboutus_box_image img {
-    max-height: 200px; /* Further reduce maximum height for small screens */
+  .company-image {
+    width: 120px; /* Adjusted image width for smaller screens */
+    height: 120px; /* Adjusted image height for smaller screens */
   }
 }
-

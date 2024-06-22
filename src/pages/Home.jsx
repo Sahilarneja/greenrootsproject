@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import CountUpComponent from '../components/CountUp';
 import About from '../components/About';
+import ProjectCarousel from '../components/ProjectCarousel';
+
 
 function Home() {
   return (
@@ -11,6 +13,8 @@ function Home() {
       <HeroSection/>
       <CountUpComponent/>
       <About/>
+      <ProjectCarousel/>
+    
     </div>
   );
 }
