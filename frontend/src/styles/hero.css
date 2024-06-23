@@ -17,10 +17,10 @@
   text-align: right; /* Align hero text to the right */
 }
 
-.hero-text h1 {
-  font-size: 4em; /* Adjust heading size as desired */
+.hero-text h4 {
+  font-size: 2rem; /* Adjust heading size as desired */
   margin-bottom: 20px; /* Adjust spacing after heading */
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.2;
 }
 

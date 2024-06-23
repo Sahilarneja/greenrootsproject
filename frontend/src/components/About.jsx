@@ -44,6 +44,27 @@ const AboutUs = () => {
           </div>
         </div>
 
+        <div className="aboutus_section">
+          <div className="section_title">Awards and Achievements</div>
+          <div className="awards_grid">
+            <div className="award_card">
+              <img src={awardImage1} alt="Award 1" />
+              <h4 className="award_title">Best Solar Installation</h4>
+              <p>Received for the most efficient solar panel installation in 2023.</p>
+            </div>
+            <div className="award_card">
+              <img src={awardImage2} alt="Award 2" />
+              <h4 className="award_title">Innovation in Renewable Energy</h4>
+              <p>Awarded for groundbreaking innovation in solar energy technology.</p>
+            </div>
+            <div className="award_card">
+              <img src={awardImage3} alt="Award 3" />
+              <h4 className="award_title">Sustainability Leader</h4>
+              <p>Recognized for outstanding contributions to sustainable energy solutions.</p>
+            </div>
+          </div>
+        </div>
+
         {/* Founder Section */}
         <div className="aboutus_section">
           <div className="founder_box">
@@ -65,7 +86,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Awards Section */}
+        {/* Awards Section
         <div className="aboutus_section">
           <div className="section_title">Awards and Achievements</div>
           <div className="awards_grid">
@@ -85,7 +106,7 @@ const AboutUs = () => {
               <p>Recognized for outstanding contributions to sustainable energy solutions.</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
        
 

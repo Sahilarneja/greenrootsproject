@@ -1,0 +1,151 @@
+* {
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #278b1e;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responsive-container-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+}
+
+.bigContainer {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainColumn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1320px;
+}
+
+.columnContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.mainImg {
+    width: 45%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px 7px;
+    border-radius: 10px;
+}
+
+.allText {
+    width: 45%;
+    margin: 0 20px;
+}
+
+.text-blk {
+    padding: 5px;
+    line-height: 1.6;
+}
+
+.headingText {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+
+.subHeadingText, .description {
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+}
+
+.subHeadingText {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.explore {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(244, 152, 146);
+    padding: 8px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.explore:hover {
+    background-color: rgb(255, 235, 234);
+    color: rgb(244, 152, 146);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 30px 0;
+    width: 100%;
+    max-width: 1320px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .mainColumn {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .allText {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mainImg {
+        width: 100%;
+    }
+}
+
+.project2 .allText {
+    order: 1;
+    margin-left: 20px;
+    margin-right: 0;
+}

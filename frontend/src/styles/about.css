@@ -43,7 +43,8 @@
 
 
 .section_title {
-  font-size: 2em;
+  font-size: 1.7em;
+  font-weight: 600;
   color: #278b1e;
   text-align: center;
   margin-bottom: 20px;
