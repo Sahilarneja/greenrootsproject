@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Logo from '../assets/main/logo.png';
 import '../styles/navbar.css';
-import Logo from '../assets/logo.png';
 
 function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -35,8 +35,8 @@ function Navbar() {
             <li><a href="#home" className="active">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#projects">Partners</a></li>
-            <li><a href="#projects">Calculator</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#calculator">Calculator</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>

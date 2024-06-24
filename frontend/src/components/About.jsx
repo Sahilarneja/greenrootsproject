@@ -1,13 +1,13 @@
 import React from 'react';
 import '../styles/about.css';
-import founderImage from '../assets/founder.jpeg';
-import awardImage1 from '../assets/award1.png';
-import awardImage2 from '../assets/award2.png';
-import awardImage3 from '../assets/award3.png';
-import companyImage1 from '../assets/OPEN - ACCESS.png';
-import companyImage2 from '../assets/SERVICES.png';
-import companyImage3 from '../assets/location.png';
-import companyImage4 from '../assets/HOUSE.png';
+import founderImage from '../assets/about/founder.jpeg';
+import awardImage1 from '../assets/about/award1.png';
+import awardImage2 from '../assets/about/award2.png';
+import awardImage3 from '../assets/about/award3.png';
+import companyImage1 from '../assets/about/OPEN - ACCESS.png';
+import companyImage2 from '../assets/about/SERVICES.png';
+import companyImage3 from '../assets/about/location.png';
+import companyImage4 from '../assets/about/HOUSE.png';
 
 const AboutUs = () => {
   // Example numbers for projects and employees
