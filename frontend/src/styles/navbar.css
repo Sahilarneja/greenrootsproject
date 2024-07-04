@@ -1,106 +1,105 @@
+/* src/styles/navbar.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 .navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-bottom: 1px solid #F4EFE6;
-    z-index: 1000;
-    transition: background-color 0.3s, transform 0.3s;
-    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
-  }
-  
-  .sticky {
     position: fixed;
     top: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo {
+    padding: 8px 20px; /* Reduced vertical padding */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.sticky {
+    background-color: #f8f9fa; /* Background color when navbar is sticky */
+}
+
+.logo img {
+    height: 50px; /* Adjusted logo height */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 22px; /* Adjusted menu icon size */
+    cursor: pointer;
+    color: #333; /* Menu icon color */
+}
+
+.nav-elements {
     display: flex;
     align-items: center;
-    gap: 10px;
-  }
-  
-  .logo img {
-    height: 50px;
-    width: 15vw;
-  }
-  
-  .logo h2 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #1C160C;
-  }
-  
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .nav-elements {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-elements ul {
+}
+
+.nav-elements ul {
     list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-elements ul li {
-    margin: 0;
-  }
-  
-  .nav-elements ul li a {
-    color: #1C160C;
+}
+
+.nav-elements li {
+    margin-left: 15px; /* Reduced margin between menu items */
+}
+
+.nav-elements a {
+    color: #333;
     text-decoration: none;
-    font-weight: 500;
-    padding: 10px 15px;
-    transition: color 0.3s, border-bottom 0.3s;
-  }
-  
-  .nav-elements ul li a:hover {
-    color: #000;
-    border-bottom: 2px solid #000;
-  }
-  
-  @media (max-width: 768px) {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-elements a:hover {
+    color: #28a745; /* Hover color */
+}
+
+.active {
+    color: #28a745; /* Active link color */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
     .menu-icon {
-      display: block;
-      font-size: 24px;
+        display: block; /* Display menu icon on smaller screens */
     }
-  
+
     .nav-elements {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      padding: 10px 0;
-      flex-direction: column;
-      align-items: center;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        position: absolute;
+        top: 56px; /* Adjusted top position */
+        left: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out; /* Smooth transition for visibility */
+        z-index: 999; /* Ensure menu is above content */
     }
-  
+
     .nav-elements.active {
-      display: flex;
+        display: flex; /* Display nav elements when active */
     }
-  
+
     .nav-elements ul {
-      flex-direction: column;
-      gap: 10px;
+        flex-direction: column;
     }
-  }
+
+    .nav-elements li {
+        margin: 8px 0; /* Adjusted margin for list items */
+    }
+
+    .menu-icon {
+        position: absolute;
+        top: 12px; /* Adjusted top position for menu icon */
+        right: 20px;
+    }
+}

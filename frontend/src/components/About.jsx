@@ -8,6 +8,7 @@ import companyImage1 from '../assets/about/OPEN - ACCESS.png';
 import companyImage2 from '../assets/about/SERVICES.png';
 import companyImage3 from '../assets/about/location.png';
 import companyImage4 from '../assets/about/HOUSE.png';
+import CountUp from './CountUp';
 
 const AboutUs = () => {
   // Example numbers for projects and employees
@@ -25,6 +26,9 @@ const AboutUs = () => {
             <p>Welcome to Greenroots Renewable Energy Pvt. Ltd., your trusted partner for high-quality, affordable solar panel installations. We empower homes and businesses with sustainable energy solutions, reducing costs and environmental impact. Committed to innovation, we lead in renewable energy technology. At Greenroots Renewable Energy Pvt. Ltd., we envision every home and business harnessing clean, renewable energy for a healthier planet. Join us in paving the way towards a sustainable future.</p>
             <p>With over {projectsCompleted} successful projects completed and a dedicated team of {employeesWorking} professionals, we specialize in delivering innovative solar solutions tailored to meet our clients' needs. Our expertise spans residential, commercial, and industrial sectors, providing customized solar power systems that optimize energy efficiency and cost savings.</p>
           </div>
+        </div>
+        <div>
+          <CountUp/>
         </div>
          {/* Company Images Grid */}
          <div className="aboutus_section">
