@@ -1,51 +1,117 @@
 .aboutus {
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .aboutus_container {
-  width: 100%;
-  max-width: 1400px;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.aboutus_section {
-  margin-bottom: 30px;
+.aboutus_welcome {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #1c160c;
+  font-weight: bold;
+}
+
+.aboutus_content_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.aboutus_image {
+  max-width: 40%;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.aboutus_intro {
+  flex: 1;
+  text-align: left;
+  max-width: 50%;
 }
 
 .aboutus_title {
   font-size: 2.5em;
-  color: #278b1e;
-  text-align: center;
-  margin-bottom: 30px;
+  color: #1c160c;
+  margin-bottom: 15px;
 }
 
-.aboutus_content {
-  text-align: center;
-  font-size: 1em;
+.aboutus_short_description {
+  font-size: 1.2em;
   line-height: 1.6;
-  color: #292929;
-  max-width: 1100px; /* Adjusted max-width */
-  margin: 0 auto; /* Center align horizontally */
-  margin-bottom: 70px;
+  margin-bottom: 20px;
+  color: #666;
 }
 
-.aboutus_content p {
-  font-weight: bold; /* Bold font weight for paragraphs */
+.aboutus_stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
+.aboutus_stat {
+  text-align: center;
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat_icon {
+  font-size: 2.5em;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.stat_info {
+  font-size: 1.2em;
+  color: #004d40;
+}
+
+.stat_number {
+  font-size: 1.5em;
+  color: #00796b;
+}
+
+.stat_label {
+  font-size: 1em;
+  color: #004d40;
+}
+
+.explore_more_button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.explore_more_button:hover {
+  background-color: #388E3C;
+}
 
 .section_title {
   font-size: 1.7em;
   font-weight: 600;
-  color: #278b1e;
+  color: #1c160c;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -86,15 +152,15 @@
 
 .founder_content h3 {
   font-size: 2em;
-  color: #278b1e;
+  color: #1c160c;
   margin-bottom: 10px;
 }
 
 .founder_content p {
   font-size: 1em;
   line-height: 1.6;
-  color: #242323;
-  font-weight: bold;
+  color: #1c160c;
+  font-weight: normal;
 }
 
 .awards_grid {
@@ -106,6 +172,7 @@
 .award_card {
   width: 300px;
   padding: 20px;
+  margin-bottom: 30px;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -121,26 +188,26 @@
 
 .award_title {
   font-size: 1.5em;
-  color: #278b1e;
+  color: #A18249;
   margin-bottom: 10px;
 }
 
 .award_card p {
   font-size: 1em;
   line-height: 1.6;
-  color: #666;
+  color: #1c160c;
   margin-bottom: 10px;
 }
 
 .company-images-grid {
   display: flex;
   justify-content: center;
-  gap: 100px; /* Adjusted gap between images */
+  gap: 100px;
 }
 
 .company-image {
-  width: 200px; /* Adjusted image width */
-  height: 200px; /* Adjusted image height */
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -154,37 +221,49 @@
 }
 
 .company-image img:hover {
-  transform: scale(1.1); /* Scale up on hover */
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
-  .aboutus_title {
-    font-size: 2em;
+  .aboutus_content_container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .section_title {
-    font-size: 1.8em;
+  .aboutus_image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 80%;
   }
 
-  .founder_image img {
-    max-height: 200px;
+  .aboutus_intro {
+    max-width: 100%;
+    text-align: center;
   }
 
-  .award_card {
-    width: 250px;
+  .aboutus_stats {
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .award_title {
-    font-size: 1.3em;
-  }
-
-  .award_card p {
-    font-size: 0.9em;
+  .company-images-grid {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .company-image {
-    width: 150px; /* Adjusted image width for smaller screens */
-    height: 150px; /* Adjusted image height for smaller screens */
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .awards_grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .award_card {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -212,7 +291,7 @@
   }
 
   .company-image {
-    width: 120px; /* Adjusted image width for smaller screens */
-    height: 120px; /* Adjusted image height for smaller screens */
+    width: 120px;
+    height: 120px;
   }
 }

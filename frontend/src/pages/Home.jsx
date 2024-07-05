@@ -5,6 +5,8 @@ import HeroSection from "../components/HeroSection";
 import About from "../components/About";
 // import Projects from "../components/Projects";
 import Services from "../components/Services";
+import ProjectPage from "../components/ProjectPage";
+import Roles from "../components/Roles";
 
 function Home() {
   return (
@@ -14,7 +16,8 @@ function Home() {
       <Services />
       {/* <CountUpComponent /> */}
       <About />
-      {/* <Projects /> */}
+      <ProjectPage/>
+      <Roles />
     </div>
   );
 }

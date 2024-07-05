@@ -1,59 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800');
-
-body {
-    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
-    background-color: #FFFFFF;
-    color: #1C160C;
-    margin: 0;
-    padding: 0;
+.services-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: stretch; 
+  background-color: #FFFFFF;
+  padding: 40px;
+  position: relative; 
 }
 
-.services-container {
-    display: flex;
-    justify-content: space-between; /* Set space between boxes */
-    align-items: stretch; /* Adjusted alignment */
-    background-color: #FFFFFF;
-    padding: 40px;
+.services-container::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-color: rgba(28, 22, 12, 0.1); 
+  z-index: -1; 
+  border-radius: 20px; 
 }
 
 .service-box {
-    flex: 1;
-    gap: 3px;
-    background-color: #FFFFFF;
-    border: 1px solid #E9DFCE;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.service-box:hover {
-    transform: translateY(-5px);
+  flex: 1;
+  margin: 0 10px; 
+  background-color: #FFFFFF;
+  border: none; 
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 30px; 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: relative;
 }
 
 .service-icon {
-    display: flex;
-    height: 32px;
-    fill: currentColor;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: block; 
+  height: 60px; 
+  fill: currentColor;  
+  margin: 0 auto 20px; 
 }
 
 .service-content {
-    padding: 0 10px;
+  padding: 0; /* Remove extra padding */
 }
 
 .service-heading {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #28a745; /* Green */
-    margin-bottom: 10px;
+  font-size: 1.8em; /* Larger heading for emphasis */
+  font-weight: bold;
+  color: #A18249; /* Darker text for contrast */
+  margin-bottom: 10px;
 }
 
 .service-description {
-    font-size: 1em;
-    color: #1C160C; /* Black */
-    line-height: 1.5;
+  font-size: 1em;
+  color: #555; /* Lighter text for description */
+  line-height: 1.6;  
 }
