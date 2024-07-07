@@ -1,31 +1,50 @@
-/* Overall Container */
-.services-container {
+/* Overall Section */
+.services-section {
     text-align: center;
     padding: 50px 20px;
     background-color: #f8f8f8;
-}
-
-/* Title Styling */
-.services-title {
+  }
+  
+  /* Title Styling */
+  .services-title {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 30px;
     color: #222;
     text-transform: uppercase; /* Add uppercase for a professional look */
     letter-spacing: 2px; /* Add spacing between letters */
-}
-
-/* Grid Styling */
-.services-grid {
+  }
+  
+  /* Content Container */
+  .services-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Card Image Styling */
+  .card-image {
+    width: 650px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Grid Styling */
+  .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-}
-
-/* Service Box Styling */
-.service-box {
+    flex: 1;
+  }
+  
+  /* Service Box Styling */
+  .service-box {
     background-color: white;
     border-radius: 12px;
     padding: 35px;
@@ -33,37 +52,37 @@
     transition: all 0.3s ease;
     max-width: 300px;
     text-align: center;
-}
-
-.service-box:hover {
+  }
+  
+  .service-box:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Icon Styling */
-.service-icon {
+  }
+  
+  /* Icon Styling */
+  .service-icon {
     font-size: 2em;
     margin-bottom: 20px;
     color: #007bff;
-}
-
-/* Heading Styling */
-.service-heading {
+  }
+  
+  /* Heading Styling */
+  .service-heading {
     font-size: 1.4em;
     font-weight: 600;
     margin-bottom: 12px;
     color: #333; /* Darker color for better contrast */
-}
-
-/* Description Styling */
-.service-description {
+  }
+  
+  /* Description Styling */
+  .service-description {
     color: #555;
     line-height: 1.6;
     font-size: 1em; /* Consistent font size for readability */
-}
-
-/* Button Styling */
-.service-button {
+  }
+  
+  /* Button Styling */
+  .service-button {
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -76,9 +95,10 @@
     text-align: center;
     width: 100%;
     font-size: 1em; /* Consistent font size */
-}
-
-.service-button:hover {
+  }
+  
+  .service-button:hover {
     background-color: #218838;
     transform: scale(1.05); /* Slightly enlarge on hover */
-}
+  }
+  

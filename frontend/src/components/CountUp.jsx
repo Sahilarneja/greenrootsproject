@@ -44,7 +44,7 @@ const CountUpComponent = () => {
           <p className="countup-description">PAN India presence</p>
         </div>
         <div className="countup-card">
-          <CountUp end={isInView ? 50 : 0} duration={4} className="countup-number" />
+          <CountUp end={isInView ? 100 : 0} duration={4} className="countup-number" />
           <span className="countup-plus">+</span>
           <p className="countup-description">Solar Projects</p>
         </div>

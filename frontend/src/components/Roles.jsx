@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/roles.css';
+import card from '../assets/Services/Anup Arora.png'; // Ensure the path is correct
 
 function Roles() {
   const services = [
@@ -26,19 +27,22 @@ function Roles() {
   ];
 
   return (
-    <div className="services-container">
+    <div className="services-section">
       <h2 className="services-title">Our Services</h2>
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div className="service-box" key={index}>
-            <img src={service.icon} alt={service.title} className="service-icon" />
-            <div className="service-content">
-              <h3 className="service-heading">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
-              <button className="service-button">Explore More</button>
+      <div className="services-content">
+        <img src={card} alt="Card" className="card-image" />
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div className="service-box" key={index}>
+              <img src={service.icon} alt={service.title} className="service-icon" />
+              <div className="service-content">
+                <h3 className="service-heading">{service.title}</h3>
+                <p className="service-description">{service.description}</p>
+                <button className="service-button">Explore More</button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Home from './pages/Home.jsx';
 import ProjectPage from './components/ProjectPage.jsx';
 function App() {
   return (
-    <>
+    
     <BrowserRouter>
     <Routes>
       <Route path = "/" element={<Home />}/>
@@ -14,7 +14,7 @@ function App() {
     
     </BrowserRouter>
     
-    </>
+    
   );
 }
 

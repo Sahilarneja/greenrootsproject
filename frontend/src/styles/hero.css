@@ -11,6 +11,7 @@
   padding: 20px; /* Add some padding for spacing */
   position: relative; /* Allows for layering elements on top (optional) */
   z-index: 0; /* Adjust stacking order if needed (optional) */
+  border: green 3px solid;
 }
 
 .hero-text {

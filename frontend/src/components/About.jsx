@@ -4,6 +4,7 @@ import founderImage from "../assets/about/founder.jpeg";
 import awardImage1 from "../assets/about/award1.png";
 import awardImage2 from "../assets/about/award2.png";
 import awardImage3 from "../assets/about/award3.png";
+import awardImage4 from "../assets/about/epc.jpg";
 import companyImage1 from "../assets/about/OPEN - ACCESS.png";
 import companyImage2 from "../assets/about/SERVICES.png";
 import companyImage3 from "../assets/about/location.png";
@@ -13,7 +14,7 @@ import companyImage4 from "../assets/about/HOUSE.png";
 import CountUp from "./CountUp";
 
 const AboutUs = () => {
-  const projectsCompleted = "50+";
+  const projectsCompleted = "100+";
   const employeesWorking = "40+";
 
   return (
@@ -91,6 +92,13 @@ const AboutUs = () => {
             </div>
             <div className="award_card">
               <img src={awardImage3} alt="Award 3" />
+              <h4 className="award_title">Sustainability Leader</h4>
+              <p>
+                Recognized for outstanding contributions to sustainable energy solutions.
+              </p>
+            </div>
+            <div className="award_card">
+              <img src={awardImage4} alt="Award 4" />
               <h4 className="award_title">Sustainability Leader</h4>
               <p>
                 Recognized for outstanding contributions to sustainable energy solutions.
