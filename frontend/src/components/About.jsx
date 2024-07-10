@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "../styles/about.css";
 import founderImage from "../assets/about/founder.jpeg";
 import awardImage1 from "../assets/about/award1.png";
 import awardImage2 from "../assets/about/award2.png";
 import awardImage3 from "../assets/about/award3.png";
 import awardImage4 from "../assets/about/epc.jpg";
-import companyImage1 from "../assets/about/OPEN - ACCESS.png";
-import companyImage2 from "../assets/about/SERVICES.png";
-import companyImage3 from "../assets/about/location.png";
 import solar from "../assets/about/solar-panel.webp";
-
-import companyImage4 from "../assets/about/HOUSE.png";
 import CountUp from "./CountUp";
 
 const AboutUs = () => {
   const projectsCompleted = "100+";
   const employeesWorking = "40+";
+  const [thumbnailUrl, setThumbnailUrl] = useState("");
+
+  useEffect(() => {
+    const fetchThumbnail = async () => {
+      try {
+        const videoId = "KvWSCzrvSA0"; // Replace with your YouTube video ID
+        const response = await axios.get(
+          `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=YOUR_YOUTUBE_API_KEY`
+        );
+        const thumbnailUrl =
+          response.data.items[0]?.snippet.thumbnails.medium.url;
+        setThumbnailUrl(thumbnailUrl);
+      } catch (error) {
+        console.error("Error fetching YouTube video thumbnail:", error);
+      }
+    };
+
+    fetchThumbnail();
+  }, []);
 
   return (
     <div id="aboutus" className="aboutus">
@@ -23,14 +38,20 @@ const AboutUs = () => {
         {/* About Us Section */}
         <div className="aboutus_section">
           <div className="aboutus_welcome">
-            Welcome to Greenroots Renewable Energy Pvt. Ltd., your trusted partner for high-quality, affordable solar panel installations.
+            Welcome to Greenroots Renewable Energy Pvt. Ltd., your trusted partner
+            for high-quality, affordable solar panel installations.
           </div>
           <div className="aboutus_content_container">
             <img src={solar} alt="Solar Panels" className="aboutus_image" />
             <div className="aboutus_intro">
               <h2 className="aboutus_title">About Us</h2>
               <p className="aboutus_short_description">
-                We empower homes and businesses with sustainable energy solutions, reducing costs and environmental impact. Committed to innovation, we lead in renewable energy technology. At Greenroots Renewable Energy Pvt. Ltd., we envision every home and business harnessing clean, renewable energy for a healthier planet. Join us in paving the way towards a sustainable future.
+                We empower homes and businesses with sustainable energy solutions,
+                reducing costs and environmental impact. Committed to innovation,
+                we lead in renewable energy technology. At Greenroots Renewable
+                Energy Pvt. Ltd., we envision every home and business harnessing
+                clean, renewable energy for a healthier planet. Join us in paving
+                the way towards a sustainable future.
               </p>
               <div className="aboutus_content">
                 <div className="aboutus_stats">
@@ -49,30 +70,41 @@ const AboutUs = () => {
                     </div>
                   </div>
                 </div>
-                {/* <button className="explore_more_button">Explore More</button> */}
               </div>
             </div>
           </div>
         </div>
-        <CountUp />
-        {/* Company Images Grid */}
-        {/* <div className="aboutus_section">
-          <div className="company-images-grid">
-            <div className="company-image">
-              <img src={companyImage1} alt="Company 1" />
-            </div>
-            <div className="company-image">
-              <img src={companyImage2} alt="Company 2" />
-            </div>
-            <div className="company-image">
-              <img src={companyImage3} alt="Company 3" />
-            </div>
-            <div className="company-image">
-              <img src={companyImage4} alt="Company 4" />
-            </div>
+        {/* End About Us Section */}
+
+        {/* YouTube Video Section */}
+        <div className="youtube_video">
+          <div className="video_description">
+            <h2>Watch Our Story</h2>
+            <p>
+              Watch this video to learn more about our journey, achievements, and
+              commitment to renewable energy.
+            </p>
           </div>
-        </div> */}
-        {/* Awards and Achievements */}
+          <div className="video_frame">
+            {/* Display the thumbnail if available */}
+            {thumbnailUrl && (
+              <img src={thumbnailUrl} alt="YouTube Video Thumbnail" />
+            )}
+            {/* Replace the video ID with your YouTube video ID */}
+            <iframe
+              width="520"
+              height="315"
+              src="https://www.youtube.com/embed/KvWSCzrvSA0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+        {/* End YouTube Video Section */}
+        <CountUp/>
+        {/* Awards and Achievements Section */}
         <div className="aboutus_section">
           <div className="section_title">Awards and Achievements</div>
           <div className="awards_grid">
@@ -94,24 +126,32 @@ const AboutUs = () => {
               <img src={awardImage3} alt="Award 3" />
               <h4 className="award_title">Sustainability Leader</h4>
               <p>
-                Recognized for outstanding contributions to sustainable energy solutions.
+                Recognized for outstanding contributions to sustainable energy
+                solutions.
               </p>
             </div>
             <div className="award_card">
               <img src={awardImage4} alt="Award 4" />
               <h4 className="award_title">Sustainability Leader</h4>
               <p>
-                Recognized for outstanding contributions to sustainable energy solutions.
+                Recognized for outstanding contributions to sustainable energy
+                solutions.
               </p>
             </div>
           </div>
         </div>
+        {/* End Awards and Achievements Section */}
+
         {/* Founder Section */}
         <div className="aboutus_section">
           <div className="founder_box">
             <div className="founder_section">
               <div className="founder_image">
-                <img src={founderImage} alt="Anup Arora" className="circular-image" />
+                <img
+                  src={founderImage}
+                  alt="Anup Arora"
+                  className="circular-image"
+                />
               </div>
               <div className="founder_content">
                 <h3>Anup Arora</h3>
@@ -123,18 +163,22 @@ const AboutUs = () => {
                 <p>
                   Experience:
                   <br />
-                  Over 28 Years of work experience in Manufacturing, Design, Supply chain, Solar power.
+                  Over 28 Years of work experience in Manufacturing, Design,
+                  Supply chain, Solar power.
                   <br />
-                  Worked with Asahi India Glass Limited, ACME Tele Power Limited & ACME Solar Energy Limited.
+                  Worked with Asahi India Glass Limited, ACME Tele Power Limited
+                  & ACME Solar Energy Limited.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        {/* End Founder Section */}
+        
+        {/* Additional Sections can be added as needed */}
       </div>
     </div>
   );
 };
 
 export default AboutUs;
-

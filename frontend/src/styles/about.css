@@ -295,3 +295,53 @@
     height: 120px;
   }
 }
+
+.youtube_video {
+  display: flex;
+  justify-content: space-between; /* Ensure video and description are spaced apart */
+  align-items: flex-start; /* Align items at the top */
+  max-width: 100%;
+  margin-top: 40px; /* Adjust as needed */
+  padding: 20px; /* Add padding around the entire section */
+}
+
+.video_description {
+  flex: 1; /* Allows the description to grow and take up available space */
+  margin-right: 40px; /* Adds space between the description and the video */
+}
+
+.video_description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1c160c; /* Adjusted to match theme */
+}
+
+.video_description p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.video_frame {
+  flex: 1; /* Allows the video frame to take up available space */
+}
+
+.video_frame iframe {
+  width: 90%; /* Ensure the video fills its container */
+  height: 315px; /* Adjust height as needed */
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .youtube_video {
+    flex-direction: column; /* Stack video and description on top of each other on smaller screens */
+    align-items: center; /* Center items on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .video_description {
+    margin-right: 0; /* Remove margin when stacked */
+    margin-bottom: 20px; /* Add space below the description instead */
+    text-align: center; /* Center text on smaller screens */
+  }
+}
