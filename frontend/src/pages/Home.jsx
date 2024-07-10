@@ -7,6 +7,7 @@ import About from "../components/About";
 import Services from "../components/Services";
 import ProjectPage from "../components/ProjectPage";
 import Roles from "../components/Roles";
+import ContactUs from "../components/ContactUs";
 
 function Home() {
   return (
@@ -17,7 +18,9 @@ function Home() {
       {/* <CountUpComponent /> */}
       <About />
       <ProjectPage/>
-      <Roles />
+      {/* <Roles /> */}
+      <ContactUs/>
+
     </div>
   );
 }
