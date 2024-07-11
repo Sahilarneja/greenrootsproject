@@ -57,7 +57,7 @@ const ProjectPage = () => {
           <div className="header-content">
             <h1 className="header-title">Our Work</h1>
             <p className="header-description">
-              We are an environmentally friendly renewable energy company offering a broad portfolio of technologies, products, & solutions to our clients globally
+            GreenRoots has successfully completed over 100 solar projects in the past seven years, demonstrating expertise in solar installation across various scales and settings. Each project reflects our commitment to quality, sustainability, and advancing renewable energy solutions.
             </p>
           </div>
         </div>

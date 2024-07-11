@@ -11,7 +11,7 @@
   padding: 40px;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(11, 11, 11, 0.1);
 }
 
 .aboutus_welcome {
@@ -50,7 +50,7 @@
 }
 
 .aboutus_short_description {
-  font-size: 1.2em;
+  font-size: 1.em;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #666;
@@ -174,7 +174,7 @@
   padding: 20px;
   margin-bottom: 30px;
   background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(4, 66, 5, 0.1);
   border-radius: 8px;
   text-align: center;
 }
@@ -317,7 +317,7 @@
 }
 
 .video_description p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   color: #666;
 }

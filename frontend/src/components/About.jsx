@@ -79,10 +79,9 @@ const AboutUs = () => {
         {/* YouTube Video Section */}
         <div className="youtube_video">
           <div className="video_description">
-            <h2>Watch Our Story</h2>
+            <h2>Why should we Switch to Solar?</h2>
             <p>
-              Watch this video to learn more about our journey, achievements, and
-              commitment to renewable energy.
+            Switching to solar energy is crucial for reducing our dependence on fossil fuels and mitigating climate change. Solar power is renewable, abundant, and emits significantly fewer greenhouse gases compared to traditional energy sources. Embracing solar energy not only lowers carbon footprints but also offers long-term cost savings and energy independence. GreenRoots can facilitate this transition by providing expert installation services tailored to individual needs. With a commitment to quality and sustainability, GreenRoots ensures seamless integration of solar systems, optimizing efficiency and reliability while contributing to a cleaner environment and a brighter future.
             </p>
           </div>
           <div className="video_frame">
