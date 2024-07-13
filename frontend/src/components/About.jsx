@@ -38,13 +38,13 @@ const AboutUs = () => {
         {/* About Us Section */}
         <div className="aboutus_section">
           <div className="aboutus_welcome">
-            Welcome to Greenroots Renewable Energy Pvt. Ltd., your trusted partner
-            for high-quality, affordable solar panel installations.
+            
           </div>
           <div className="aboutus_content_container">
             <img src={solar} alt="Solar Panels" className="aboutus_image" />
             <div className="aboutus_intro">
-              <h2 className="aboutus_title">About Us</h2>
+              <h2 className="aboutus_title">Welcome to Greenroots</h2>
+              <h2 className="aboutus_title">Renewable Energy</h2>
               <p className="aboutus_short_description">
                 We empower homes and businesses with sustainable energy solutions,
                 reducing costs and environmental impact. Committed to innovation,
@@ -81,7 +81,7 @@ const AboutUs = () => {
           <div className="video_description">
             <h2>Why should we Switch to Solar?</h2>
             <p>
-            Switching to solar energy is crucial for reducing our dependence on fossil fuels and mitigating climate change. Solar power is renewable, abundant, and emits significantly fewer greenhouse gases compared to traditional energy sources. Embracing solar energy not only lowers carbon footprints but also offers long-term cost savings and energy independence. GreenRoots can facilitate this transition by providing expert installation services tailored to individual needs. With a commitment to quality and sustainability, GreenRoots ensures seamless integration of solar systems, optimizing efficiency and reliability while contributing to a cleaner environment and a brighter future.
+            Switching to solar energy is crucial for reducing our dependence on fossil fuels and mitigating climate change. Solar power is renewable, abundant, and emits significantly fewer greenhouse gases compared to traditional energy sources. Embracing solar energy not only lowers carbon footprints but also offers long-term cost savings and energy independence. Greenroots can facilitate this transition by providing expert installation services tailored to individual needs. With a commitment to quality and sustainability, Greenroots ensures seamless integration of solar systems, optimizing efficiency and reliability while contributing to a cleaner environment and a brighter future.
             </p>
           </div>
           <div className="video_frame">
@@ -162,10 +162,14 @@ const AboutUs = () => {
                 <p>
                   Experience:
                   <br />
-                  Over 28 Years of work experience in Manufacturing, Design,
+                  Over 28 Years of work experience in Manufacturing,
+                  <br/>
+                    Design,
                   Supply chain, Solar power.
                   <br />
-                  Worked with Asahi India Glass Limited, ACME Tele Power Limited
+                  Worked with Asahi India Glass Limited, ACME Tele 
+                  <br/>
+                  Power Limited
                   & ACME Solar Energy Limited.
                 </p>
               </div>

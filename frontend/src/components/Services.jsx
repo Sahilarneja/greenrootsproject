@@ -11,13 +11,13 @@ const servicesData = [
     },
     {
         icon: faUnlockAlt,
-        heading: 'Access Control',
+        heading: 'Open Access',
         description: 'Open access solar enables consumers to choose renewable energy sources, providing greater flexibility and sustainability in electricity consumption.',
     },
     {
         icon: faMoneyBill,
-        heading: 'COPEX / OPEX',
-        description: 'COPEX (Capital Expenditure) refers to the upfront costs of acquiring and installing assets, while OPEX (Operational Expenditure) covers the ongoing costs of operating and maintaining them',
+        heading: 'CAPEX / OPEX',
+        description: 'CAPEX (Capital Expenditure) refers to the upfront costs of acquiring and installing assets, while OPEX (Operational Expenditure) covers the ongoing costs of operating and maintaining them',
     },
 ];
 

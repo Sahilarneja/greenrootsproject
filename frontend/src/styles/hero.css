@@ -16,13 +16,20 @@
 
 .hero-text {
   text-align: right; /* Align hero text to the right */
+  margin-bottom: 150px;
+}
+.hero-section h4 {
+    font-weight: 400;
 }
 
-.hero-text h4 {
-  font-size: 2rem; /* Adjust heading size as desired */
+.hero-text h3 {
+  margin-top: 20px;
+  font-size: 1.5rem; /* Adjust heading size as desired */
   margin-bottom: 20px; /* Adjust spacing after heading */
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 500px;
+  line-height: 1;
+  width: 700px;
+  
 }
 
 .hero-button {

@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import ProjectPage from "../components/ProjectPage";
 import Roles from "../components/Roles";
 import ContactUs from "../components/ContactUs";
+import TotalSavings from "../components/TotalSaving";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <About />
       <ProjectPage/>
       {/* <Roles /> */}
+      <TotalSavings/>
       <ContactUs/>
 
     </div>

@@ -30,7 +30,7 @@
 }
 
 .aboutus_image {
-  max-width: 40%;
+  max-width: 50%;
   height: auto;
   margin-right: 30px;
   border-radius: 10px;
@@ -50,7 +50,7 @@
 }
 
 .aboutus_short_description {
-  font-size: 1.em;
+  font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #666;
@@ -73,23 +73,23 @@
 
 .stat_icon {
   font-size: 2.5em;
-  color: #00796b;
+  color: #5d7900;
   margin-bottom: 10px;
 }
 
 .stat_info {
   font-size: 1.2em;
-  color: #004d40;
+  color: #666;
 }
 
 .stat_number {
   font-size: 1.5em;
-  color: #00796b;
+  color: #666;
 }
 
 .stat_label {
   font-size: 1em;
-  color: #004d40;
+  color: #666;
 }
 
 .explore_more_button {
@@ -109,11 +109,11 @@
 }
 
 .section_title {
-  font-size: 1.7em;
+  font-size: 1.9em;
   font-weight: 600;
-  color: #1c160c;
+  color: #271d0b;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .founder_box {
@@ -146,7 +146,7 @@
 
 .founder_content {
   flex: 2;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -311,13 +311,13 @@
 }
 
 .video_description h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
   color: #1c160c; /* Adjusted to match theme */
 }
 
 .video_description p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: #666;
 }

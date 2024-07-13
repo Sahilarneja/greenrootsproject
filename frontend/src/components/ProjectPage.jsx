@@ -7,16 +7,17 @@ import rattanImage from '../assets/projectPage/rattan.jpg';
 import skgimage from '../assets/projectPage/skg.jpg';
 import mechimage from '../assets/projectPage/mechdoor.jpg';
 import sttimage from '../assets/projectPage/sttcotex.jpg';
+import ask from '../assets/projectPage/ASK.jpg';
 //import rooftopImage from '../assets/projectPage/rooftop.jpg'; // Add this line for the new project
 
 const ProjectPage = () => {
   const projects = [
     {
-      title: 'NIIT Learning Gurugram',
+      title: 'NIIT Learning Gurugram 400 kwp EPC',
       image: niitImage,
     },
     {
-      title: 'INDUS PHARMA-166 KWP GHILOTH, RAJ',
+      title: 'INDUS PHARMA GHILOTH, RAJ 166 KWP',
       image: indusImage,
     },
     {
@@ -24,7 +25,7 @@ const ProjectPage = () => {
       image: ashirwaadImage,
     },
     {
-      title: 'Rattan Engg 470 kwp, Kahrani Raj EPC',
+      title: 'Rattan Engg 470 kwp, Kahrani Raj 470 kwp EPC',
       image: rattanImage,
     },
    
@@ -44,8 +45,8 @@ const ProjectPage = () => {
       image: sttimage,
     },
     {
-      title: 'Project D',
-      image: rattanImage,
+      title: 'ASK AUTOMOBILES , KAROLI RAJASTHAN  2500 KWP EPC',
+      image: ask,
     },
     // Add more projects as needed
   ];
@@ -57,7 +58,7 @@ const ProjectPage = () => {
           <div className="header-content">
             <h1 className="header-title">Our Work</h1>
             <p className="header-description">
-            GreenRoots has successfully completed over 100 solar projects in the past seven years, demonstrating expertise in solar installation across various scales and settings. Each project reflects our commitment to quality, sustainability, and advancing renewable energy solutions.
+            Greenroots has successfully completed over 100 solar projects in the past seven years, demonstrating expertise in solar installation across various scales and settings. Each project reflects our commitment to quality, sustainability, and advancing renewable energy solutions.
             </p>
           </div>
         </div>

@@ -1,54 +1,56 @@
 .services-container {
   display: flex;
-  justify-content: space-around; 
-  align-items: stretch; 
-  background-color: #FFFFFF;
-  padding: 40px;
-  position: relative; 
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: #ffffff;
+  padding: 40px; /* This can be adjusted as needed */
+  position: relative;
 }
 
 .services-container::before {
   content: "";
   position: absolute;
-  inset: 0; 
-  background-color: rgba(28, 22, 12, 0.1); 
-  z-index: -1; 
-  border-radius: 20px; 
+  inset: 0;
+  background-color: rgba(28, 22, 12, 0.1);
+  z-index: -1;
+  border-radius: 20px;
 }
 
 .service-box {
   flex: 1;
-  margin: 0 10px; 
-  background-color: #FFFFFF;
-  border: none; 
+  margin: 0 0px; /* Adjusted margin */
+  background-color: #ffffff;
+  border: 2px solid #A18249; /* Brown border */
   border-radius: 20px;
   overflow: hidden;
-  padding: 30px; 
+   /* Adjusted padding */
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  width: 10px;
+  height: 300px;
 }
 
 .service-icon {
-  display: block; 
-  height: 60px; 
-  fill: currentColor;  
-  margin: 0 auto 20px; 
+  display: block;
+  height: 40px;
+  margin-top: -20px;
 }
 
 .service-content {
-  padding: 0; /* Remove extra padding */
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .service-heading {
-  font-size: 1.8em; /* Larger heading for emphasis */
+  font-size: 1.8em;
   font-weight: bold;
-  color: #A18249; /* Darker text for contrast */
+  color: #A18249;
   margin-bottom: 10px;
 }
 
 .service-description {
   font-size: 1em;
-  color: #555; /* Lighter text for description */
-  line-height: 1.6;  
+  color: #555;
+  line-height: 1.6;
 }
