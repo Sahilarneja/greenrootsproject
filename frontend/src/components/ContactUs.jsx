@@ -33,7 +33,7 @@ const ContactUs = () => {
 
       // Handle successful response
       if (response.status === 201) {
-        toast.success('Message sent successfully!');
+        toast.success('We will reachout soon!');
         setName('');
         setEmail('');
         setSubject('');
@@ -43,7 +43,7 @@ const ContactUs = () => {
       }
     } catch (error) {
       // Handle error response from server
-      console.error('Error sending message:', error);
+      console.error('Error occured in contacting:', error);
       toast.error('Failed to send message. Please try again later.');
     }
   };

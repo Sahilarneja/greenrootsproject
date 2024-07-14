@@ -92,7 +92,7 @@ const AboutUs = () => {
             {/* Replace the video ID with your YouTube video ID */}
             <iframe
               width="520"
-              height="315"
+              height="320"
               src="https://www.youtube.com/embed/KvWSCzrvSA0"
               title="YouTube video player"
               frameBorder="0"

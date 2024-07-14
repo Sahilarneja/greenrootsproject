@@ -110,3 +110,37 @@
   font-weight: 500;
   color: #1C160C;
 }
+
+/* Media Query for Tablets and Smaller Screens */
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+/* Media Query for Desktop Screens */
+@media (min-width: 1024px) {
+  .header-description {
+    width: 85%; /* Adjust width for larger screens */
+    margin-left: 90px;
+  }
+
+  .other-projects-slider {
+    padding: 16px 20px; /* Adjusted padding */
+    margin-top: 20px; /* Increased margin for separation */
+  }
+}
+
+/* Media Query for Tablets and Smaller Screens */
+@media (min-width: 768px) {
+  .other-project-card {
+    max-width: 250px; /* Maintain the maximum width for consistency */
+  }
+}
+
+/* Media Query for Desktop Screens */
+@media (min-width: 1024px) {
+  .other-project-card {
+    max-width: 250px; /* Maintain the maximum width for consistency */
+  }
+}

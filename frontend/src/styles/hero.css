@@ -15,27 +15,30 @@
 }
 
 .hero-text {
+  position: absolute; /* Position text absolutely within the hero section */
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
   text-align: right; /* Align hero text to the right */
-  margin-bottom: 150px;
-}
-.hero-section h4 {
-    font-weight: 400;
+  margin-bottom: 20px; /* Adjust spacing */
 }
 
-.hero-text h3 {
+.hero-section h4 {
+  font-weight: 400;
+}
+
+.hero-text h5 {
   margin-top: 20px;
-  font-size: 1.5rem; /* Adjust heading size as desired */
+  font-size: 1.2rem; /* Adjust heading size as desired */
   margin-bottom: 20px; /* Adjust spacing after heading */
-  font-weight: 500px;
+  font-weight: 400;
   line-height: 1;
-  width: 700px;
-  
+  width: 100%; /* Ensure text stays within the container width */
 }
 
 .hero-button {
   display: inline-block;
   min-width: 84px;
-  max-width: 480px;
+  max-width: 240px;
   cursor: pointer;
   overflow: hidden;
   border-radius: 50px;
@@ -55,15 +58,34 @@
   background-color: #017a53;
 }
 
-/* Media query for smaller screens */
+/* Media query adjustments */
+@media (max-width: 1200px) {
+  .hero-section {
+    height: 70vh; /* Adjust height for medium-sized screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    height: 60vh; /* Adjust height for tablets */
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
-    height: 60vh; /* Adjust height for smaller screens */
+    height: 50vh; /* Adjust height for smaller tablets */
     padding: 10px; /* Adjust padding for smaller screens */
   }
 
-  .hero-text h1 {
-    font-size: 2.5em; /* Adjust heading size for smaller screens */
+  .hero-text {
+    bottom: 10px; /* Adjust position of text for smaller screens */
+    right: 10px; /* Adjust position of text for smaller screens */
+    text-align: right; /* Align hero text to the right */
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .hero-text h5 {
+    font-size: 1.0rem; /* Adjust heading size for smaller screens */
   }
 
   .hero-button {
@@ -71,5 +93,28 @@
     line-height: 35px;
     font-size: 0.9em;
     padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    height: 40vh; /* Adjust height for mobile screens */
+  }
+
+  .hero-text {
+    bottom: 5px; /* Adjust position of text for smallest screens */
+    right: 5px; /* Adjust position of text for smallest screens */
+    margin-bottom: 5px; /* Adjust spacing */
+  }
+
+  .hero-text h5 {
+    font-size: 0.9rem; /* Further reduce heading size for smallest screens */
+  }
+
+  .hero-button {
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.8em;
+    padding: 0 10px;
   }
 }

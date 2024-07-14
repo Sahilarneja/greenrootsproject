@@ -18,17 +18,19 @@
 
 .service-box {
   flex: 1;
-  margin: 0 0px; /* Adjusted margin */
+  margin: 0 10px; /* Adjusted margin */
   background-color: #ffffff;
   border: 2px solid #A18249; /* Brown border */
   border-radius: 20px;
   overflow: hidden;
-   /* Adjusted padding */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  width: 10px;
-  height: 300px;
+  transition: transform 0.3s ease-in-out; /* Added for hover effect */
+}
+
+.service-box:hover {
+  transform: translateY(-10px); /* Added for hover effect */
 }
 
 .service-icon {
@@ -38,8 +40,7 @@
 }
 
 .service-content {
-  padding: 0;
-  margin-bottom: 50px;
+  padding: 20px; /* Adjusted padding */
 }
 
 .service-heading {
@@ -53,4 +54,40 @@
   font-size: 1em;
   color: #555;
   line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .services-container {
+    flex-direction: column;
+    padding: 20px; /* Adjusted padding */
+  }
+
+  .service-box {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-box {
+    height: auto; /* Ensures boxes adjust height based on content */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services-container {
+    padding: 10px; /* Further reduced padding for smaller screens */
+  }
+
+  .service-box {
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .service-heading {
+    font-size: 1.5em; /* Reduced font size for headings */
+  }
+
+  .service-description {
+    font-size: 0.9em; /* Reduced font size for descriptions */
+  }
 }
