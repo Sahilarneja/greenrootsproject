@@ -20,7 +20,7 @@
   flex: 1;
   margin: 0 10px; /* Adjusted margin */
   background-color: #ffffff;
-  border: 2px solid #A18249; /* Brown border */
+  border: 2px solid #707037; /* Brown border */
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
@@ -46,7 +46,7 @@
 .service-heading {
   font-size: 1.8em;
   font-weight: bold;
-  color: #A18249;
+  color: #28a745;
   margin-bottom: 10px;
 }
 

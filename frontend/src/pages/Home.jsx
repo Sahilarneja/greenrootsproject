@@ -7,6 +7,7 @@ import Services from "../components/Services";
 import ProjectPage from "../components/ProjectPage";
 import ContactUs from "../components/ContactUs";
 import TotalSavings from "../components/TotalSaving";
+import Map from "../components/Map";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <ProjectPage/>
       <TotalSavings/>
       <ContactUs/>
+      <Map/>
 
     </div>
   );

@@ -1,6 +1,8 @@
-.project-page {
-  /* font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif; */
-  
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffafa; /* Slightly off-white background for better contrast */
 }
 
 .main-content {
@@ -23,11 +25,21 @@
   line-height: 1.2;
 }
 
+.header-title::after {
+  content: '';
+  display: block;
+  width: 240px;
+  height: 4px;
+  background-color: #0a0a0a;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
 .header-description {
-  color: #A18249;
-  font-size: 1.3rem;
+  color: #28a745;
+  font-size: 1.2rem;
   line-height: 1.5;
-  width : 85%;
+  width: 85%;
   margin-left: 90px;
   margin-top: 30px;
 }
@@ -44,7 +56,7 @@
   flex-direction: column;
   gap: 8px;
   padding: 16px; /* Adjust padding as needed */
-  background-color: #FFFFFF; /* Optional: Add a background color */
+  background-color: #ffffff; /* Optional: Add a background color */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
 }

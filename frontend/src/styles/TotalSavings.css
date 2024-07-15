@@ -1,11 +1,36 @@
-.total-savings-container {
-  max-width: 500px;
+.main-container {
+  display: flex;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  border: 2px solid #A18249;
+  background-color: #ffffff;
+ 
   border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  flex: 0 0 600px; /* Fixed width for the image container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  margin-right: 80px;
+}
+
+.solar-image {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  border-radius: 10px;
+}
+
+.calculator-container {
+  flex: 1;
+}
+
+.total-savings-container {
+  padding: 20px;
+  
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .total-savings-container h2 {
@@ -60,6 +85,16 @@ button:hover {
 
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    flex: 0 0 auto;
+    padding-right: 0;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+
   .total-savings-container {
     padding: 15px;
   }

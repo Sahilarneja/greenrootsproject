@@ -94,14 +94,24 @@
   color: #666;
 }
 
-
-
 .section_title {
   font-size: 1.9em;
   font-weight: 600;
-  color: #271d0b;
+  color: #0a0a0a;
   text-align: center;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.section_title::after {
+  content: '';
+  display: block;
+  width: 240px;
+  height: 4px;
+  background-color: #0a0a0a;
+  margin: 0 auto;
+  margin-top: 13px;
+  
 }
 
 .founder_box {
@@ -160,6 +170,7 @@
 .award_card {
   width: 300px;
   padding: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
   background: #fff;
   box-shadow: 0 4px 10px rgba(4, 66, 5, 0.1);
@@ -176,8 +187,9 @@
 
 .award_title {
   font-size: 1.5em;
-  color: #a18249;
+  color: #28a745;
   margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .award_card p {
@@ -250,7 +262,6 @@
   width: 90%;
   height: 320px;
   border: none;
-
 }
 
 @media (max-width: 768px) {
