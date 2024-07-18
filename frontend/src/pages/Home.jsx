@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-// import CountUpComponent from "../components/CountUp";
 import About from "../components/About";
 import Services from "../components/Services";
 import ProjectPage from "../components/ProjectPage";
 import ContactUs from "../components/ContactUs";
 import TotalSavings from "../components/TotalSaving";
-import Map from "../components/Map";
+// import Map from "../components/Map";
+import Footer from "../components/Footer";
+import CustomerCarousel from "../components/CustomerCarousel";
 
 function Home() {
   return (
@@ -20,7 +21,9 @@ function Home() {
       <ProjectPage/>
       <TotalSavings/>
       <ContactUs/>
-      <Map/>
+      {/* <Map/> */}
+      <CustomerCarousel/>
+      <Footer/>
 
     </div>
   );

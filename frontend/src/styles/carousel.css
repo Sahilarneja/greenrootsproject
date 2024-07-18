@@ -1,0 +1,44 @@
+/* carousel.css */
+
+.customer-carousel {
+    padding: 40px 0;
+    background-color: #ffffff;
+  }
+  
+  .carousel-title {
+    text-align: center; /* Center the title */
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Reduce spacing between logos */
+  .slick-list {
+    margin: 0 -5px; /* Negative margin to counteract padding */
+  }
+  
+  .slick-slide {
+    padding: 0 5px; 
+  }
+  
+  .customer-logo {
+    text-align: center;
+  }
+  
+  .customer-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 2px solid #ddd;
+  }
+  
+  /* Remove hover effect */
+  .customer-logo:hover {
+    transform: none; /* No scale on hover */
+  }
+  

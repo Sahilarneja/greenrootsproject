@@ -1,41 +1,19 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7; /* Slightly off-white background for better contrast */
-  }
-  
-  .map-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    background-color: #ffffff;
-    max-width: 1500px; /* Adjust max-width as needed */
-    margin: 20px auto; /* Center the map container */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-  
-  .map-wrapper h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #333333;
-    text-align: center;
-  }
-  
-  .map-container {
-    margin-top: 30px;
-    width: 90%; /* Take full width of the map-wrapper */
-    display: flex;
-    justify-content: center; /* Center the iframe horizontally */
-  }
-  
-  .map-container iframe {
-    width: 120%; /* Increase the width */
-    height: 450px;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
+/* ... other styles ... */
+
+.map-column { /* Styles for the map column */
+  text-align: center;
+}
+
+.map-wrapper {
+  margin-bottom: 20px; /* Add some space below the map */
+}
+
+.map-container {
+  width: 100%;
+  max-width: 400px; /* Adjust to your desired size */
+  height: 250px; /* Adjust to your desired size */
+  border: 2px solid #333; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflowing map content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}

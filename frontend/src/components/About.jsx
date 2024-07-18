@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../styles/about.css";
+import '../styles/about.css';
 import founderImage from "../assets/about/founder.jpeg";
 import awardImage1 from "../assets/about/award1.png";
 import awardImage2 from "../assets/about/award2.png";
@@ -103,43 +103,32 @@ const AboutUs = () => {
         </div>
         {/* End YouTube Video Section */}
         <CountUp/>
-        {/* Awards and Achievements Section */}
+        
         <div className="aboutus_section">
           <div className="section_title">Awards and Achievements</div>
           <div className="awards_grid">
             <div className="award_card">
               <img src={awardImage1} alt="Award 1" />
               <h4 className="award_title">Best Solar Installation</h4>
-              <p>
-                Received for the most efficient solar panel installation in 2023.
-              </p>
+              <p>Received for the most efficient solar panel installation in 2023.</p>
             </div>
             <div className="award_card">
               <img src={awardImage2} alt="Award 2" />
               <h4 className="award_title">Innovation in Renewable Energy</h4>
-              <p>
-                Awarded for groundbreaking innovation in solar energy technology.
-              </p>
+              <p>Awarded for groundbreaking innovation in solar energy technology.</p>
             </div>
             <div className="award_card">
               <img src={awardImage3} alt="Award 3" />
               <h4 className="award_title">Sustainability Leader</h4>
-              <p>
-                Recognized for outstanding contributions to sustainable energy
-                solutions.
-              </p>
+              <p>Recognized for outstanding contributions to sustainable energy solutions.</p>
             </div>
             <div className="award_card">
               <img src={awardImage4} alt="Award 4" />
               <h4 className="award_title">Sustainability Leader</h4>
-              <p>
-                Recognized for outstanding contributions to sustainable energy
-                solutions.
-              </p>
+              <p>Recognized for outstanding contributions to sustainable energy solutions.</p>
             </div>
           </div>
         </div>
-        {/* End Awards and Achievements Section */}
 
         {/* Founder Section */}
         <div className="aboutus_section">
