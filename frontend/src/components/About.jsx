@@ -37,9 +37,7 @@ const AboutUs = () => {
       <div className="aboutus_container">
         {/* About Us Section */}
         <div className="aboutus_section">
-          <div className="aboutus_welcome">
-            
-          </div>
+          <div className="aboutus_welcome"></div>
           <div className="aboutus_content_container">
             <img src={solar} alt="Solar Panels" className="aboutus_image" />
             <div className="aboutus_intro">
@@ -81,7 +79,7 @@ const AboutUs = () => {
           <div className="video_description">
             <h2>Why should we Switch to Solar?</h2>
             <p>
-            Switching to solar energy is crucial for reducing our dependence on fossil fuels and mitigating climate change. Solar power is renewable, abundant, and emits significantly fewer greenhouse gases compared to traditional energy sources. Embracing solar energy not only lowers carbon footprints but also offers long-term cost savings and energy independence. Greenroots can facilitate this transition by providing expert installation services tailored to individual needs. With a commitment to quality and sustainability, Greenroots ensures seamless integration of solar systems, optimizing efficiency and reliability while contributing to a cleaner environment and a brighter future.
+            Switching to solar energy is crucial for reducing our dependence on fossil fuels and mitigating climate change. Solar power is renewable, abundant, and emits significantly fewer greenhouse gases compared to traditional energy sources. Embracing solar energy not only lowers carbon footprints but also offers long-term cost savings and energy independence. Greenroots can facilitate this transition by providing expert design & installation services tailored to individual needs. With a commitment to quality and sustainability, Greenroots ensures seamless integration of solar systems, optimizing efficiency and reliability while contributing to a cleaner environment and a brighter future.
             </p>
           </div>
           <div className="video_frame">
@@ -143,6 +141,7 @@ const AboutUs = () => {
               </div>
               <div className="founder_content">
                 <h3>Anup Arora</h3>
+                <h5>Founder & Director</h5>
                 <p>
                   PGDM-SCM (Symbiosis, Pune)
                   <br />

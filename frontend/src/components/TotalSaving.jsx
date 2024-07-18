@@ -19,14 +19,14 @@ const TotalSavings = () => {
   };
 
   return (
-    <div className="main-container">
+    <div id="calculator" className="main-container">
       <div className="image-container">
         <img src={solarImage} alt="Solar Panels" className="solar-image" />
       </div>
       <div className="calculator-container">
         <div className="total-savings-container">
-          <h2>Calculate Your Saving</h2>
-          <br/>
+          <h2>Calculate Your Savings</h2>
+          <br />
           <div className="form-group">
             <label htmlFor="available-area">Available Area (sq.m):</label>
             <input

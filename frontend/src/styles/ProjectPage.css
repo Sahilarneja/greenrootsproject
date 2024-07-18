@@ -1,8 +1,12 @@
+/* Add necessary imports for slick-carousel */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #ffffff; /* Slightly off-white background for better contrast */
+  background-color: #ffffff;
 }
 
 .main-content {
@@ -46,75 +50,122 @@ body, html {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 80%;
 }
 
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 16px; /* Adjust padding as needed */
-  background-color: #ffffff; /* Optional: Add a background color */
+  padding: 16px;
+  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .project-image {
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
+  transition: opacity 0.3s ease;
 }
 
 .project-title {
   font-size: 1rem;
   font-weight: 500;
   color: #1C160C;
+  text-align: center;
 }
 
-/* Styles for the other projects slider */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 93, 14, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.8s ease, opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover .project-image {
+  opacity: 0.5;
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.project-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
 .other-projects-container {
   margin-top: 40px;
   width: 100%;
   text-align: center;
 }
 
-.other-projects-title {
-  color: #1C160C;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;;
-}
-
 .other-projects-slider {
   display: flex;
   overflow-x: auto;
-  gap: 40px;
+  gap: 30px;
   padding: 16px 0;
 }
 
 .other-project-card {
+  position: relative;
   flex: 0 0 auto;
-  width: 250px;
+  width: 700px;
   background-color: #FFFFFF;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 12px;
   text-align: center;
-  height: 300px;
-  margin-left: 50px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .other-project-image {
   width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
+  padding-top: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
   margin-bottom: 8px;
+  transition: opacity 0.3s ease;
+  height: auto;
+}
+
+.other-project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.other-project-card:hover .project-image {
+  opacity: 0.5;
 }
 
 .other-project-title {
@@ -123,36 +174,62 @@ body, html {
   color: #1C160C;
 }
 
-/* Media Query for Tablets and Smaller Screens */
+.other-project-card .project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 93, 14, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.other-project-card .project-info {
+  text-align: center;
+}
+
+.other-project-card .project-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.other-project-card .project-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
   .project-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Media Query for Desktop Screens */
 @media (min-width: 1024px) {
   .header-description {
-    width: 85%; /* Adjust width for larger screens */
+    width: 85%;
     margin-left: 90px;
   }
 
   .other-projects-slider {
-    padding: 16px 20px; /* Adjusted padding */
-    margin-top: 20px; /* Increased margin for separation */
+    padding: 16px 20px;
+    margin-top: 20px;
   }
 }
 
-/* Media Query for Tablets and Smaller Screens */
 @media (min-width: 768px) {
   .other-project-card {
-    max-width: 250px; /* Maintain the maximum width for consistency */
+    max-width: 250px;
   }
 }
 
-/* Media Query for Desktop Screens */
 @media (min-width: 1024px) {
   .other-project-card {
-    max-width: 250px; /* Maintain the maximum width for consistency */
+    max-width: 250px;
   }
 }
