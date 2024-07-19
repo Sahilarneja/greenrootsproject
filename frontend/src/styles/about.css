@@ -164,7 +164,9 @@
 .awards_grid {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
+  background-color: rgb(81, 132, 89);
+  width: 100%;
 }
 
 .award_card {
@@ -172,8 +174,8 @@
   padding: 20px;
   margin-top: 10px;
   margin-bottom: 30px;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(4, 66, 5, 0.1);
+  background: #ffffff;
+  
   border-radius: 8px;
   text-align: center;
 }
@@ -187,7 +189,7 @@
 
 .award_title {
   font-size: 1.5em;
-  color: #28a745;
+  color: #0a0a0a;
   margin-bottom: 10px;
   margin-top: 5px;
 }

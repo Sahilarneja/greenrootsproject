@@ -15,9 +15,10 @@ function Home() {
     <div className="home">
       <Navbar />
       <HeroSection />
-      <Services />
+      
       {/* <CountUpComponent /> */}
       <About />
+      <Services />
       <ProjectPage/>
       <TotalSavings/>
       <ContactUs/>

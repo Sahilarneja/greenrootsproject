@@ -6,7 +6,6 @@ import '../styles/carousel.css'; // Your custom CSS for carousel styles
 import logo1 from '../assets/company/img1.jpg'; 
 import logo2 from '../assets/company/img2.jpg';
 import logo3 from '../assets/company/img3.jpg';
-import logo4 from '../assets/company/img4.jpg';
 import logo5 from '../assets/company/img5.jpg';
 import logo6 from '../assets/company/img6.jpg';
 import logo7 from '../assets/company/img7.jpg';
@@ -68,9 +67,7 @@ const CustomerCarousel = () => {
         <div className="customer-logo">
           <img src={logo3} alt="Customer Logo 3" />
         </div>
-        <div className="customer-logo">
-          <img src={logo4} alt="Customer Logo 4" />
-        </div>
+       
         <div className="customer-logo">
           <img src={logo5} alt="Customer Logo 5" />
         </div>
