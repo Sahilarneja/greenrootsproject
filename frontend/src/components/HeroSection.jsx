@@ -11,25 +11,41 @@ const HeroCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 950,
+    speed: 500, // Faster transition
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2600,
-    cssEase: 'linear',
+    autoplaySpeed: 3000, // Adjusted autoplay speed
+    cssEase: 'ease-in-out', // Smoother easing function
+    fade: true, // Optional: use fade transitions for a smoother effect
   };
 
   return (
-    <div className="hero-carousel">
+    <div id="home" className="hero-carousel">
       <Slider {...settings}>
         <div className="hero-slide">
-          <img src={hero1} alt="Hero 1" />
+          <img 
+            src={hero1} 
+            alt="Hero 1" 
+            loading="lazy" 
+            className="hero-image"
+          />
         </div>
         <div className="hero-slide">
-          <img src={hero2} alt="Hero 2" />
+          <img 
+            src={hero2} 
+            alt="Hero 2" 
+            loading="lazy" 
+            className="hero-image"
+          />
         </div>
         <div className="hero-slide">
-          <img src={hero3} alt="Hero 3" />
+          <img 
+            src={hero3} 
+            alt="Hero 3" 
+            loading="lazy" 
+            className="hero-image"
+          />
         </div>
       </Slider>
     </div>

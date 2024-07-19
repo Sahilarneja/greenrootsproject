@@ -1,3 +1,19 @@
+/* General Styles */
+.title {
+  font-size: 2em; /* Consistent title font size */
+  color: #1c160c; /* Consistent title color */
+  font-weight: bold; /* Consistent font weight */
+  margin-bottom: 15px; /* Margin for spacing */
+}
+
+.paragraph {
+  font-size: 1.2em; /* Consistent paragraph font size */
+  line-height: 1.6; /* Line height for readability */
+  color: #666; /* Consistent paragraph color */
+  margin-bottom: 20px; /* Margin for spacing */
+}
+
+/* About Us Section */
 .aboutus {
   padding: 20px;
   background-color: #ffffff;
@@ -31,7 +47,7 @@
 
 .aboutus_image {
   max-width: 50%;
-  height: auto;
+  height: 420px;
   margin-right: 30px;
   margin-left: 20px;
   border-radius: 10px;
@@ -45,17 +61,11 @@
 }
 
 .aboutus_title {
-  font-size: 2.5em;
-  color: #1c160c;
-  margin-bottom: 15px;
+  @extend .title;
 }
 
 .aboutus_short_description {
-  font-size: 1.2em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  color: #666;
+  @extend .paragraph;
 }
 
 .aboutus_stats {
@@ -95,9 +105,7 @@
 }
 
 .section_title {
-  font-size: 1.9em;
-  font-weight: 600;
-  color: #0a0a0a;
+  @extend .title;
   text-align: center;
   margin-bottom: 25px;
   position: relative;
@@ -111,7 +119,6 @@
   background-color: #0a0a0a;
   margin: 0 auto;
   margin-top: 13px;
-  
 }
 
 .founder_box {
@@ -149,58 +156,53 @@
 }
 
 .founder_content h3 {
-  font-size: 2em;
-  color: #1c160c;
-  margin-bottom: 10px;
+  @extend .title;
 }
 
 .founder_content p {
-  font-size: 1em;
-  line-height: 1.6;
-  color: #1c160c;
-  font-weight: normal;
+  @extend .paragraph;
 }
 
+/* Awards Section */
 .awards_grid {
   display: flex;
   justify-content: center;
   gap: 40px;
-  background-color: rgb(81, 132, 89);
-  width: 100%;
+  background-color: rgb(81, 132, 89); /* Darker, more elegant green */
+  padding: 40px 0; /* Add padding for a spacious look */
 }
 
 .award_card {
-  width: 300px;
-  padding: 20px;
-  margin-top: 10px;
+  width: 250px; /* Slightly narrower for a sleek feel */
+  padding: 30px;
   margin-bottom: 30px;
-  background: #ffffff;
-  
-  border-radius: 8px;
-  text-align: center;
+  background: #f7f7f7; /* Softer white for contrast */
+  border-radius: 12px; /* Larger border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Add a subtle transition */
+}
+
+.award_card:active { /* Subtle effect on click/tap */
+  transform: translateY(2px);
 }
 
 .award_card img {
   max-width: 100%;
   height: auto;
-  max-height: 200px;
-  border-radius: 8px;
+  max-height: 150px; /* Adjust for image size */
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .award_title {
-  font-size: 1.5em;
-  color: #0a0a0a;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  @extend .title;
 }
 
 .award_card p {
-  font-size: 1em;
-  line-height: 1.6;
-  color: #1c160c;
-  margin-bottom: 10px;
+  @extend .paragraph;
 }
 
+/* Company Images Grid */
 .company-images-grid {
   display: flex;
   justify-content: center;
@@ -226,6 +228,7 @@
   transform: scale(1.1);
 }
 
+/* YouTube Video Section */
 .youtube_video {
   display: flex;
   justify-content: space-between;
@@ -241,19 +244,15 @@
 }
 
 .video_description h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #1c160c;
+  @extend .title;
 }
 
 .video_description p {
+  @extend .paragraph;
   text-align: left;
-  font-size: 1.2em;
-  line-height: 1.6;
   margin-left: 15px;
   margin-bottom: 20px;
   margin-right: 20px;
-  color: #666;
 }
 
 .video_frame {
@@ -266,7 +265,38 @@
   border: none;
 }
 
-@media (max-width: 768px) {
+/* Why Choose Us Section */
+.why_choose_us {
+  padding: 60px 20px;
+  background-color: #ffffff; /* Light background for contrast */
+  color: #333; /* Dark text color for readability */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section_title {
+  @extend .title;
+  font-size: 1.5em; /* Larger title for emphasis */
+  color: #1c160c; /* Deep color for prominence */
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section_text {
+  @extend .paragraph;
+  font-size: 1.2em; /* Consistent paragraph font size */
+  color: #666; /* Slightly lighter color for the text */
+  text-align: center; /* Center-align text for a clean look */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
   .aboutus_content_container {
     flex-direction: column;
     align-items: center;
@@ -321,33 +351,86 @@
     width: 100%;
     padding: 20px;
   }
+
+  .youtube_video {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video_description {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .video_frame {
+    width: 100%;
+    text-align: center;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .aboutus_title {
     font-size: 1.8em;
   }
 
   .section_title {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 
-  .founder_section {
+  .paragraph {
+    font-size: 1.1em;
+  }
+
+  .aboutus_image {
+    height: 300px;
+  }
+
+  .youtube_video {
     flex-direction: column;
     align-items: center;
   }
 
-  .awards_grid {
-    flex-wrap: wrap;
-    gap: 20px;
+  .video_description {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .award_card {
+  .video_frame iframe {
     width: 100%;
   }
+}
 
-  .company-image {
-    width: 120px;
-    height: 120px;
+@media (max-width: 480px) {
+  .aboutus_title {
+    font-size: 1.5em;
+  }
+
+  .section_title {
+    font-size: 1.2em;
+  }
+
+  .paragraph {
+    font-size: 1em;
+  }
+
+  .aboutus_image {
+    height: 250px;
+  }
+
+  .youtube_video {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video_description {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .video_frame iframe {
+    width: 100%;
   }
 }

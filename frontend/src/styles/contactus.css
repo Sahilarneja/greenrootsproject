@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7; /* Slightly off-white background for better contrast */
+  background-color: #ffffff; /* Slightly off-white background for better contrast */
 }
 
 .contact-us {
@@ -13,7 +13,6 @@ body, html {
   background-color: #ffffff;
   max-width: 1500px; /* Adjust max-width as needed */
   margin: 20px auto; /* Center the contact form */
- 
   border-radius: 10px;
 }
 
@@ -31,14 +30,8 @@ body, html {
   margin-top: 30px;
 }
 
-.image-container, .form-container {
+.form-container, .image-container {
   width: 50%; /* Adjust width to take half of the container */
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
 }
 
 .form-container {
@@ -107,13 +100,74 @@ button:hover {
   background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
   .contact-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .image-container, .form-container {
+  .form-container, .image-container {
     width: 80%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+
+  .contact-us h1 {
+    font-size: 2em;
+  }
+
+  .form-container h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container, .image-container {
+    width: 90%; /* Adjust width as needed */
+  }
+
+  .contact-us h1 {
+    font-size: 1.8em;
+  }
+
+  .form-container h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container, .image-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .contact-us h1 {
+    font-size: 1.5em;
+  }
+
+  .form-container h2 {
+    font-size: 1.2em;
+  }
+
+  input, textarea {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9em;
   }
 }

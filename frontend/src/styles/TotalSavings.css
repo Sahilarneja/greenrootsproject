@@ -1,13 +1,14 @@
+/* Main Container */
 .main-container {
   display: flex;
   max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff;
- 
+  background-color: #ffffff; /* Set background color to white */
   border-radius: 10px;
 }
 
+/* Image Container */
 .image-container {
   flex: 0 0 600px; /* Fixed width for the image container */
   display: flex;
@@ -22,22 +23,36 @@
   border-radius: 10px;
 }
 
+/* Calculator Container */
 .calculator-container {
   flex: 1;
 }
 
+/* Total Savings Container */
 .total-savings-container {
   padding: 20px;
-  
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #ffffff; /* Set background color to white */
 }
 
 .total-savings-container h2 {
   text-align: center;
-  color: #A18249;
+  color: #1C160C; /* Adjusted color to match the theme */
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
 }
 
+.total-savings-container h2::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 4px;
+  background-color: #1C160C; /* Line color */
+  margin: 15px auto 0; /* Center the line and add space from the text */
+}
+
+/* Form Group */
 .form-group {
   margin-bottom: 20px;
 }
@@ -45,7 +60,8 @@
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #333;
+  color: #333; /* Dark text color for labels */
+  font-size: 1rem; /* Consistent font size */
 }
 
 .form-group input,
@@ -55,32 +71,35 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  font-size: 1rem; /* Consistent font size for inputs and selects */
 }
 
+/* Button */
 button {
   width: 100%;
   padding: 10px;
-  background-color: #019863;
-  color: #fff;
+  background-color: #019863; /* Primary button color */
+  color: #ffffff; /* White text color for button */
   border: none;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1rem; /* Consistent font size for button */
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #017a53;
+  background-color: #017a53; /* Darker shade on hover */
 }
 
+/* Results */
 .results {
   margin-top: 20px;
   text-align: center;
 }
 
 .results p {
-  font-size: 1.2em;
-  color: #333;
+  font-size: 1.2rem;
+  color: #333; /* Dark text color for results */
 }
 
 /* Responsive adjustments */
@@ -102,11 +121,12 @@ button:hover {
   .form-group input,
   .form-group select {
     padding: 8px;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 
   button {
     padding: 8px;
-    font-size: 0.9em;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
 }
 
@@ -114,10 +134,11 @@ button:hover {
   .form-group input,
   .form-group select {
     padding: 6px;
+    font-size: 0.8rem; /* Adjust font size for even smaller screens */
   }
 
   button {
     padding: 6px;
-    font-size: 0.8em;
+    font-size: 0.8rem; /* Adjust font size for even smaller screens */
   }
 }

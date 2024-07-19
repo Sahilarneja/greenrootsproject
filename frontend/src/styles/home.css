@@ -1,0 +1,55 @@
+/* home.css */
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: #fff;
+  width: 50px; /* Default size */
+  height: 50px; /* Same as width to maintain circular shape */
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1000;
+  font-size: 24px; /* Default font size */
+}
+
+.fixed-button:hover {
+  background-color: #218838;
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(90deg); /* Rotate arrow if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .fixed-button {
+    width: 45px; /* Slightly smaller size for medium screens */
+    height: 45px; /* Maintain circular shape */
+    font-size: 22px; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-button {
+    width: 40px; /* Further reduced size for smaller screens */
+    height: 40px; /* Maintain circular shape */
+    font-size: 20px; /* Smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-button {
+    width: 35px; /* Smaller size for very small screens */
+    height: 35px; /* Maintain circular shape */
+    font-size: 18px; /* Smaller font size */
+  }
+}

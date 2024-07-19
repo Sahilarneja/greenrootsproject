@@ -1,44 +1,89 @@
 /* carousel.css */
 
 .customer-carousel {
-    padding: 40px 0;
-    background-color: #ffffff;
-  }
-  
+  padding: 40px 0;
+  background-color: #ffffff; /* Ensure a clean background */
+}
+
+.carousel-title {
+  text-align: center; /* Center the title */
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #1C160C; /* Darker color for the title to match the theme */
+  font-weight: bold;
+}
+
+.slick-list {
+  margin: 0 -5px; /* Negative margin to counteract padding */
+}
+
+.slick-slide {
+  padding: 0 5px; /* Adjust spacing between slides */
+}
+
+.customer-logo {
+  text-align: center;
+}
+
+.customer-logo img {
+  display: block;
+  margin: 0 auto;
+  width: 150px; /* Consistent size for logos */
+  height: 130px;
+  border-radius: 50%; /* Circular logos */
+  object-fit: contain; /* Ensure logos fit within their container */
+  background-color: #ffffff; /* Match background to ensure logo visibility */
+  border: 2px solid #ddd; /* Light border to highlight logos */
+  transition: transform 0.3s ease-in-out;
+}
+
+.customer-logo:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
   .carousel-title {
-    text-align: center; /* Center the title */
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-    font-weight: bold;
+    font-size: 1.8em;
   }
-  
-  /* Reduce spacing between logos */
-  .slick-list {
-    margin: 0 -5px; /* Negative margin to counteract padding */
-  }
-  
-  .slick-slide {
-    padding: 0 5px; 
-  }
-  
-  .customer-logo {
-    text-align: center;
-  }
-  
+
   .customer-logo img {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: contain;
-    background-color: white;
-    border: 2px solid #ddd;
+    width: 140px; /* Increase logo size for medium screens */
+    height: 120px;
   }
-  
-  /* Remove hover effect */
-  .customer-logo:hover {
-    transform: none; /* No scale on hover */
+
+  .slick-slide {
+    padding: 0 3px; /* Reduce spacing between slides */
   }
-  
+}
+
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 1.6em;
+  }
+
+  .customer-logo img {
+    width: 120px; /* Increase logo size for smaller screens */
+    height: 100px;
+  }
+
+  .slick-slide {
+    padding: 0 2px; /* Further reduce spacing between slides */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-title {
+    font-size: 1.4em;
+    margin-bottom: 15px; /* Reduce margin for smaller screens */
+  }
+
+  .customer-logo img {
+    width: 100px; /* Increase logo size for very small screens */
+    height: 80px;
+  }
+
+  .slick-slide {
+    padding: 0 1px; /* Minimal spacing between slides for very small screens */
+  }
+}
