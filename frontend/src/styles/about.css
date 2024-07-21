@@ -245,6 +245,7 @@
 
 .video_description h2 {
   @extend .title;
+  
 }
 
 .video_description p {
