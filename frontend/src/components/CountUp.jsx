@@ -50,7 +50,7 @@ const CountUpComponent = () => {
           <p className="countup-description">Solar Projects</p>
         </div>
         <div className="countup-card" ref={inViewRef}>
-          {inView && <CountUp end={30} duration={4} className="countup-number" />}
+          {inView && <CountUp end={50} duration={4} className="countup-number" />}
           <span className="countup-unit"> MW</span>
           <p className="countup-description">Solar Projects Installed</p>
         </div>

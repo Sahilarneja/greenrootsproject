@@ -134,7 +134,7 @@ const AboutUs = () => {
             </div>
             <div className="award_card">
               <img src={awardImage2} alt="Award 2" />
-              <p className="award_title">Mentioned in the solar installation companies in the 2020-21</p>
+              <p className="award_title">Ranked among the top 30 solar rooftop companies in India 2020-2021 , 2022,2023 (Three Consecutive Years)</p>
             </div>
             <div className="award_card">
               <img src={awardImage3} alt="Award 3" />

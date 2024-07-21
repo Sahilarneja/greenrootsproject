@@ -17,8 +17,8 @@ const servicesData = [
     {
         icon: faMoneyBill,
         heading: 'CAPEX / OPEX',
-        description: 'CAPEX (Capital Expenditure) refers to the upfront costs of acquiring and installing assets, while OPEX (Operational Expenditure) covers the ongoing costs of operating and maintaining them. In the context of rooftop solar installations, CAPEX includes expenses for purchasing solar panels, inverters, mounting systems, and the labor required for installation. OPEX, on the other hand, encompasses costs related to the maintenance of the solar system, such as cleaning the panels, replacing inverters, and monitoring system performance. Understanding the distinction between CAPEX and OPEX is crucial for assessing the long-term financial viability and budgeting of solar energy projects.',
-    },
+        description: 'The Operational Expenditure (OpEx) model shifts solar plant setup and maintenance to a third party, addressing the high costs of the Capital Expenditure (CapEx) model. Partnering with a Renewable Energy Service Company (RESCO), consumers provide space while the RESCO handles equipment, installation, and maintenance, offering cheaper electricity through a Power Purchase Agreement (PPA). Conversely, the CapEx model requires consumers to cover the full cost of the solar system but grants complete ownership, tax benefits, and the ability to sell excess energy back to the grid. For those with sufficient capital, the CapEx model allows full control, with potential energy savings recovering the initial investment within 5-6 years, and solar loans can reduce the financial burden.'
+    }
 ];
 
 function Services() {
