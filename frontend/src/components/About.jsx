@@ -16,17 +16,18 @@ const AboutUs = () => {
     const fetchThumbnail = async () => {
       try {
         const videoId = "KvWSCzrvSA0"; // Replace with your YouTube video ID
-        const apiKey = "YOUR_VALID_YOUTUBE_API_KEY"; // Replace with your YouTube API Key
+        const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY; // Use environment variable for API Key
         const response = await axios.get(
           `https://www.googleapis.com/youtube/v3/videos`,
           {
             params: {
               part: "snippet",
               id: videoId,
-              key: 'AIzaSyBIMOlNbZpobPuieBeuHhjgqxJhoN3nzn4'
+              key: apiKey
             }
           }
         );
+        console.log(response.data); // Log the response data
         const thumbnailUrl =
           response.data.items[0]?.snippet.thumbnails.medium.url;
         setThumbnailUrl(thumbnailUrl);
@@ -34,7 +35,7 @@ const AboutUs = () => {
         console.error("Error fetching YouTube video thumbnail:", error);
       }
     };
-
+  
     fetchThumbnail();
   }, []);
 
