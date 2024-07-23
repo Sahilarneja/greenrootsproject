@@ -10,16 +10,17 @@
 
 /* Image Container */
 .image-container {
-  flex: 0 0 600px; /* Fixed width for the image container */
+  flex: 0 0 400px; /* Reduced width for the image container */
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 20px;
-  margin-right: 80px;
+  margin-right: 40px; /* Adjusted margin */
 }
 
 .solar-image {
   width: 100%; /* Ensure the image takes the full width of the container */
+  max-width: 350px; /* Maximum width of the image */
   border-radius: 10px;
 }
 

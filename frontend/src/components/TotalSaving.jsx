@@ -22,7 +22,7 @@ const TotalSavings = () => {
     <div id="calculator" className="main-container">
       <div className="image-container">
         <img src={solarImage} alt="Solar Panels" className="solar-image" />
-      </div>
+      </div> 
       <div className="calculator-container">
         <div className="total-savings-container">
           <h2>Calculate Your Savings</h2>

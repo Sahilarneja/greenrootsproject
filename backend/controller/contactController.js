@@ -10,7 +10,7 @@ const contactController = async (req, res) => {
     await newContact.save();
 
     // Send email to the provided email address
-    const toEmail = [email, 'sales2@greenrootsrenewable.in'];
+    const toEmail = [email, 'Sales@greenrootsrenewable.in'];
     const emailSubject = 'Thank you for contacting us';
     const emailContent = `<p>Dear ${name},</p>
                           <p>Thank you for contacting us. We will get back to you soon.</p>`;
