@@ -1,0 +1,19 @@
+/* ... other styles ... */
+
+.map-column { /* Styles for the map column */
+  text-align: center;
+}
+
+.map-wrapper {
+  margin-bottom: 20px; /* Add some space below the map */
+}
+
+.map-container {
+  width: 100%;
+  max-width: 300px; /* Adjust to your desired size */
+  height: 200px; /* Adjust to your desired size */
+  border: 2px solid #333; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflowing map content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
